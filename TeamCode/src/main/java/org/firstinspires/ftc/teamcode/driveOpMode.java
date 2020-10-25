@@ -32,6 +32,7 @@ public class driveOpMode extends LinearOpMode{
         waitForStart();
         motors[0].setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         motors[1].setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        resetStartTime();
         while(opModeIsActive()) {
             //NormalizedRGBA sensedColor = color.getNormalizedColors();
             dir = new Vector(this.gamepad1.left_stick_x,-this.gamepad1.left_stick_y);
