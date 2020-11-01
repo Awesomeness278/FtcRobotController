@@ -19,6 +19,7 @@ public class shooter extends LinearOpMode {
             double at = (h-(b*d))/(d*d);
             velocity = Math.sqrt(-(g)/(2*Math.pow(Math.cos(Math.toRadians(angle)),2)*at));
             telemetry.addData("velocity",velocity);
+            telemetry.update();
         }
     }
     double getDistance(double x,double y){
